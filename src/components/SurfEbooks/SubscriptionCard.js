@@ -28,12 +28,12 @@ function SubscriptionCard({
   const [formSupervisorName, setFormSupervisorName] = useState(supervisorName);
 
   const handleSubscribe = () => {
-    // Handle the subscription logic here, e.g., send a request to the server
-    // You can also set the state variable to true to indicate that the user has subscribed.
-    setSubscribed(true);
+    setSubscribed(!subscribed);
 
-    // Show the second card when subscribed
-    setShowSecondCard(true);
+  // Toggle the 'showSecondCard' state only if subscribed is false
+  if (!subscribed) {
+    setShowSecondCard(!showSecondCard);
+  }
   };
 
   const handleDownloadFormData = () => {
@@ -73,8 +73,8 @@ function SubscriptionCard({
                   {subscriptionCardData.description}
                 </p>
                 <div className='d-flex justify-content-between'>
-                  <button className='btn btn-primary' onClick={handleSubscribe}>
-                    {subscribed ? 'Subscribed successfully!' : 'Subscribe It'}
+                <button className='btn btn-primary' onClick={handleSubscribe}>
+                    Subscribe It
                   </button>
                 </div>
               </div>
