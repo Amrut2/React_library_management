@@ -28,12 +28,7 @@ function SubscriptionCard({
   const [formSupervisorName, setFormSupervisorName] = useState(supervisorName);
 
   const handleSubscribe = () => {
-    setSubscribed(!subscribed);
-
-  // Toggle the 'showSecondCard' state only if subscribed is false
-  if (!subscribed) {
     setShowSecondCard(!showSecondCard);
-  }
   };
 
   const handleDownloadFormData = () => {
@@ -73,7 +68,10 @@ function SubscriptionCard({
                   {subscriptionCardData.description}
                 </p>
                 <div className='d-flex justify-content-between'>
-                <button className='btn btn-primary' onClick={handleSubscribe}>
+                  <button
+                    className='btn btn-primary'
+                    onClick={handleSubscribe}
+                  >
                     Subscribe It
                   </button>
                 </div>
@@ -104,85 +102,85 @@ function SubscriptionCard({
 
               {/* Subscription Form */}
               <form>
-                    <div className="mb-3">
-                      <div className="form-group row">
-                        <label htmlFor="globalId" className="col-sm-2 col-form-label">Global ID:</label>
-                        <div className="col-sm-4">
-                          <input
-                            type="text"
-                            className="form-control"
-                            id="globalId"
-                            value={globalId}
-                            onChange={(e) => setGlobalId(e.target.value)}
-                          />
-                        </div>
-                        <label htmlFor="name" className="col-sm-2 col-form-label">Name:</label>
-                        <div className="col-sm-4">
-                          <input
-                            type="text"
-                            className="form-control"
-                            id="name"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                          />
-                        </div>
-                      </div>
-
-                      <div className="form-group row">
-                        <label htmlFor="grade" className="col-sm-2 col-form-label">Grade:</label>
-                        <div className="col-sm-4">
-                          <input
-                            type="text"
-                            className="form-control"
-                            id="grade"
-                            value={grade}
-                            onChange={(e) => setGrade(e.target.value)}
-                          />
-                        </div>
-                        <label htmlFor="joiningDate" className="col-sm-2 col-form-label">Joining Date:</label>
-                        <div className="col-sm-4">
-                          <input
-                            type="text"
-                            className="form-control"
-                            id="joiningDate"
-                            value={joiningDate}
-                            onChange={(e) => setJoiningDate(e.target.value)}
-                          />
-                        </div>
-                      </div>
-
-                      <div className="form-group row">
-                        <label htmlFor="employeeId" className="col-sm-2 col-form-label">Employee ID:</label>
-                        <div className="col-sm-4">
-                          <input
-                            type="text"
-                            className="form-control"
-                            id="employeeId"
-                            value={employeeId}
-                            onChange={(e) => setEmployeeId(e.target.value)}
-                          />
-                        </div>
-                        <label htmlFor="supervisorName" className="col-sm-2 col-form-label">Supervisor Name:</label>
-                        <div className="col-sm-4">
-                          <input
-                            type="text"
-                            className="form-control"
-                            id="supervisorName"
-                            value={supervisorName}
-                            onChange={(e) => setSupervisorName(e.target.value)}
-                          />
-                        </div>
-                      </div>
+                <div className="mb-3">
+                  <div className="form-group row">
+                    <label htmlFor="globalId" className="col-sm-2 col-form-label">Global ID:</label>
+                    <div className="col-sm-4">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="globalId"
+                        value={globalId}
+                        onChange={(e) => setGlobalId(e.target.value)}
+                      />
                     </div>
+                    <label htmlFor="name" className="col-sm-2 col-form-label">Name:</label>
+                    <div className="col-sm-4">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                      />
+                    </div>
+                  </div>
 
-                    {/* Download Button */}
-                    <div className="d-flex justify-content-center">
-                    <button className='btn btn-primary' onClick={handleDownloadFormData}>
+                  <div className="form-group row">
+                    <label htmlFor="grade" className="col-sm-2 col-form-label">Grade:</label>
+                    <div className="col-sm-4">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="grade"
+                        value={grade}
+                        onChange={(e) => setGrade(e.target.value)}
+                      />
+                    </div>
+                    <label htmlFor="joiningDate" className="col-sm-2 col-form-label">Joining Date:</label>
+                    <div className="col-sm-4">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="joiningDate"
+                        value={joiningDate}
+                        onChange={(e) => setJoiningDate(e.target.value)}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="form-group row">
+                    <label htmlFor="employeeId" className="col-sm-2 col-form-label">Employee ID:</label>
+                    <div className="col-sm-4">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="employeeId"
+                        value={employeeId}
+                        onChange={(e) => setEmployeeId(e.target.value)}
+                      />
+                    </div>
+                    <label htmlFor="supervisorName" className="col-sm-2 col-form-label">Supervisor Name:</label>
+                    <div className="col-sm-4">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="supervisorName"
+                        value={supervisorName}
+                        onChange={(e) => setSupervisorName(e.target.value)}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Download Button */}
+                <div className="d-flex justify-content-center">
+                  <button className='btn btn-primary' onClick={handleDownloadFormData}>
                     {subscriptionSuccess ? 'Subscribed successfully!' : 'Save and Download'}
                   </button>
-                    </div>
+                </div>
 
-                  </form>
+              </form>
             </div>
           </div>
         )}
