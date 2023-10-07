@@ -290,7 +290,6 @@ function SurfEbooks() {
                   </div>
 
                   {/* Subscription Form */}
-                  {/* Subscription Form */}
                   <form>
                     <div className="mb-3">
                       <div className="form-group row">
