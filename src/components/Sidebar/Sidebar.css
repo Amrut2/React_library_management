@@ -1,0 +1,44 @@
+/* Sidebar.css */
+.sidebar {
+  background-color: #373a47;
+  color: #b8b7ad;
+  width: 243px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  margin-top: 80px;
+  padding-top: 40px;
+  
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0 35px;
+}
+
+.sidebar li {
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from parent (Sidebar) */
+  transition: color 0.2s; /* Smooth color transition on hover */
+  display: block; /* Make the entire <li> clickable */
+}
+
+.sidebar a:hover {
+  color: #00bcd4; /* Change text color on hover */
+}
+
+/* Active link styles */
+.sidebar li.active {
+  font-weight: bold; /* Optionally, make the active link bold */
+  color: #00bcd4; /* Active link color */
+}
+
+/* Rest of your existing styles */

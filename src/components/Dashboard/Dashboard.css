@@ -1,0 +1,91 @@
+
+
+
+/* Dashboard.css */
+.DASHBOARD {
+  /* display: flex; */
+  height: 100vh;
+  overflow: hidden;
+  /* margin-left: 10px; */
+  background-color: aliceblue;
+  flex: 1;
+  padding: 10px;
+  margin-left: 250px;
+  width: 100vw;
+    margin-left: -10px
+}
+
+
+
+/* Styling for your cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 18px;align-items: center;
+}
+
+/* Styling for your table */
+.table {
+  width: 100%;
+}
+
+/* Pie chart styling */
+.piechart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+/* Add some styles to your circles */
+.circle1,
+.circle2,
+.circle3,
+.circle4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 2px solid #c92541;
+  margin-left: 20px;
+  transition: transform 0.2s;
+}
+
+/* Add hover effect to circles */
+.circle1:hover,
+.circle2:hover,
+.circle3:hover,
+.circle4:hover {
+  transform: scale(1.1);
+}
+
+/* Media queries for responsiveness */
+/* Media queries for responsiveness */
+@media (max-width: 992px) {
+  .sidebar {
+    width: 70px;
+  }
+
+  .sidebar .sidebar-content {
+    padding-left: 10px;
+  }
+
+  /* Adjust the margin for smaller screens to create space between sidebar and content */
+  .container {
+    margin-left: 70px; /* Adjust this value as needed */
+    
+  }
+}
+
+.container1{
+  width:82%;
+}
+
+

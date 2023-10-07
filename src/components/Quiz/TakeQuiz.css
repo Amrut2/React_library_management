@@ -1,0 +1,17 @@
+.QUIZ{
+  height: 100vh;
+  overflow: hidden;
+  background-color: aliceblue;
+  padding: 10px;
+  margin-left: 240px;
+  width: calc(100vw - 10px); /* Adjusted width to prevent horizontal scrollbar */
+  margin-left: -10px;
+  }
+
+  .container1 {
+    margin-left: 267px;
+    overflow-y: auto;
+    max-height: calc(100vh - 100px);
+  }
+  
+  

@@ -1,0 +1,269 @@
+/* SURFBOOKS container styles */
+.SURFBOOKS {
+  height: 100vh;
+  overflow: hidden;
+  background-color: aliceblue;
+  flex: 1;
+  padding: 10px;
+  margin-left: 250px;
+  width: 100vw;
+    margin-left: -10px
+}
+.navbar{
+  margin-left:-10px;
+    width: 100vw;
+}
+
+/* Card styles */
+.card {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #e8e8e8;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Container1 (e-book list) styles */
+.container1 {
+  margin-left: 267px;
+  overflow-y: auto;
+  max-height: calc(100vh - 100px);
+  width:81%;
+
+}
+
+/* Button styles */
+.button-container {
+  display: inline-flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.card-link-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+  text-decoration: underline;
+}
+
+/* Improved card visibility by reducing margin */
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.col-md-4 {
+  padding: 10px;
+}
+
+/* Detail view container styles */
+.detail_container {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: aliceblue;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 90%;
+  width: 400px;
+  text-align: center;
+  width: 80%;
+  margin-left: 110px;
+  height: 85vh;
+  margin-top: 32px;
+}
+
+/* Close button styles */
+
+
+.detail_content {
+  margin-top: -27px;
+  padding-top:10px
+}
+
+/* Add your custom styles for the buttons */
+.read-more-button {
+  background-color: #007bff;
+  /* Blue color for Read More button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-button:hover {
+  background-color: #0056b3;
+  /* Darker blue color on hover */
+}
+
+.recommend-button {
+  background-color: #6c757d;
+  /* Gray color for Recommend button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recommend-button:hover {
+  background-color: #545b62;
+  /* Darker gray color on hover */
+}
+
+.detail_container .close {
+  position: absolute;
+  top: 0px;
+  right: -240px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #170606;
+  z-index: 1;
+  padding-top:10px
+  /* Make sure it's above other elements */
+}
+
+.button-no-underline {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the text color */
+  cursor: pointer; /* Change cursor to pointer */
+  color: #007bff;
+}
+
+/* Add these styles to your CSS file */
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top:150px;
+    width:50%;
+    
+}
+
+.popup-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popup-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.popup-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: black;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.popup-buttons button {
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+}
+
+.popup-buttons button.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.popup-buttons button.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.popup-buttons button.btn-secondary {
+  background-color: #ccc;
+  color: #333;
+}
+
+.popup-buttons button.btn-secondary:hover {
+  background-color: #999;
+}
+/* Updated CSS for button layout */
+.popup-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.popup-button-container button {
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+}
+
+.popup-button-container button.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.popup-button-container button.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.popup-button-container button.btn-secondary {
+  background-color: #ccc;
+  color: #333;
+}
+
+.popup-button-container button.btn-secondary:hover {
+  background-color: #999;
+}
+

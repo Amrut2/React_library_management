@@ -1,0 +1,36 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: #222a35; /*Background color for the navbar */
+  color: #fff; /* Text color for navbar items */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0  20px ;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top:-10px;
+  
+  
+}
+
+.logo img {
+  cursor: pointer;
+  width: 100%;
+  max-height: 70px;
+}
+
+.user-options {
+  display: flex;
+  gap: 5px;
+}
+
+.notification-icon ,
+.user-icon {
+  max-height: -5px; /* Set your desired icon height */
+  padding : 0 10px;
+  cursor: pointer;
+}
+
+/* You can add more CSS to style the navbar as you like */

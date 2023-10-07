@@ -1,0 +1,79 @@
+/* LoginPage.css */
+
+/* Overall container for the login page */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222a35;
+}
+
+/* Login form container */
+.login-form {
+  width: 500px;
+  padding: 20px;
+  border: none; /* Remove the border */
+  background-color: #222a35; /* Set the background color */
+  color: #fff; /* Text color */
+  text-align: left; /* Center-align the contents */
+}
+
+/* Logo styling */
+.logo1 img {
+  width: 100%; /* Make the logo image responsive */
+  max-width: 700px; /* Limit the maximum width */
+  margin-bottom: 20px; /* Add some spacing below the logo */
+}
+
+/* Form input styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+  /* color: #fff;  */
+}
+
+/* Input styling (underlined) */
+input {
+  width: 100%;
+  padding: 10px;
+  border: none; /* Remove the input border */
+  border-bottom: 1px solid #fff; 
+  background-color: transparent; /* Transparent background */
+  color: #fff; /* Text color */
+  font-size: 16px;
+}
+
+/* Button styling */
+button {
+  width: 50%;
+  padding: 10px;
+  background-color: #222a35;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #007bff;
+  
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer text */
+.footer {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px; /* Add spacing above the footer */
+}
