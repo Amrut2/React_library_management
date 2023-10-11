@@ -8,10 +8,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import SurfEbooks from './components/SurfEbooks/SurfEbooks';
 import TakeQuiz from './components/Quiz/TakeQuiz';
 import Logout from './components/Logout/Logout';
-import Sidebar from './components/Sidebar/Sidebar';
-
-// import Navbar from './components/Navbar/Navbar';
-// import Sidebar from './components/Sidebar/Sidebar';
+import NewComponent from './components/SurfEbooks/NewComponent';
 
 
 const App=()=>{
@@ -24,6 +21,7 @@ const App=()=>{
 				<Route path='/surfbooks' element={<SurfEbooks/>} />
 				<Route path='/takequiz' element={<TakeQuiz />} />
 				<Route path='/logout' element={<Logout />} />
+				<Route path="/new-component" element={<NewComponent />} />
 			</Routes>
 		</Router>
 		</>

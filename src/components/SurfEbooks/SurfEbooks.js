@@ -159,6 +159,12 @@ function SurfEbooks() {
           supervisorName={supervisorName}
           downloadFormData={downloadFormData}
           toggleSecondCard={toggleSecondCard}
+          setGlobalId={setGlobalId}
+          setGrade={setGrade}
+          setEmployeeId={setEmployeeId}
+          setName={setName}
+          setJoiningDate={setJoiningDate}
+          setSupervisorName={setSupervisorName}
         />
       )}
 
@@ -215,7 +221,7 @@ function SurfEbooks() {
                       style={{
                         backgroundColor: '#222a35',
                         borderRadius: '30px',
-                        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+                        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.7)',
                         border: 'none',
                       }}
                     >
@@ -255,6 +261,7 @@ function SurfEbooks() {
                   </div>
                 ))}
               </div>
+              {/* < hr/> */}
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { useNavigate } from 'react-router-dom';
 
 function SubscriptionCard({
   showSubscriptionCard,
@@ -12,12 +13,20 @@ function SubscriptionCard({
   employeeId,
   supervisorName,
   downloadFormData,
+  setGlobalId,
+  setGrade ,
+  setEmployeeId,
+  setName,
+  setJoiningDate,
+  setSupervisorName
+
 }) {
   if (!showSubscriptionCard) return null;
 
   const [subscribed, setSubscribed] = useState(false);
   const [showSecondCard, setShowSecondCard] = useState(false);
   const [subscriptionSuccess, setSubscriptionSuccess] = useState(false);
+  const navigate = useNavigate();
 
   // Define state variables and setter functions for the form fields
   const [formGlobalId, setFormGlobalId] = useState(globalId);
@@ -26,6 +35,8 @@ function SubscriptionCard({
   const [formJoiningDate, setFormJoiningDate] = useState(joiningDate);
   const [formEmployeeId, setFormEmployeeId] = useState(employeeId);
   const [formSupervisorName, setFormSupervisorName] = useState(supervisorName);
+
+  
 
   const handleSubscribe = () => {
     setShowSecondCard(!showSecondCard);
@@ -36,6 +47,7 @@ function SubscriptionCard({
     // After successful download, set the subscriptionSuccess state to true
     downloadFormData();
     setSubscriptionSuccess(true);
+    navigate('./new-component');
   };
 
   return (
@@ -176,6 +188,7 @@ function SubscriptionCard({
                 {/* Download Button */}
                 <div className="d-flex justify-content-center">
                   <button className='btn btn-primary' onClick={handleDownloadFormData}>
+                  {/* <button className='btn btn-primary'> */}
                     {subscriptionSuccess ? 'Subscribed successfully!' : 'Save and Download'}
                   </button>
                 </div>
